@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "1080312969091",
-    "firebase_url": "https://servidoralpha-ad5b9.firebaseio.com",
-    "project_id": "servidoralpha-ad5b9",
-    "storage_bucket": "servidoralpha-ad5b9.appspot.com"
+    "project_number": "699697486240",
+    "firebase_url": "https://pitagorapp-bd8c8.firebaseio.com",
+    "project_id": "pitagorapp-bd8c8",
+    "storage_bucket": "pitagorapp-bd8c8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1080312969091:android:a7253c95229ad2060a28b6",
+        "mobilesdk_app_id": "1:699697486240:android:757b69dbd0197e4e8c2cc5",
         "android_client_info": {
           "package_name": "com.software.pitagora_app_201"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1080312969091-uubojlkl9ctdnlng2lg9siarkeud39eh.apps.googleusercontent.com",
+          "client_id": "699697486240-fmbgu58giruje64bln727th4kjuhvcps.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDmEZk_8FKIk-pEUD6lUwQ97LSwuU3JIrM"
+          "current_key": "AIzaSyBOqeX_nscxL120FTxW2J4EELvXq7-45zw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1080312969091-uubojlkl9ctdnlng2lg9siarkeud39eh.apps.googleusercontent.com",
+              "client_id": "699697486240-fmbgu58giruje64bln727th4kjuhvcps.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
