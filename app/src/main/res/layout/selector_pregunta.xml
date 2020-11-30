@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".SelectorPreguntaActivity">
+
+    <TextView
+        android:id="@+id/titulo_selector_preguntas"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="84dp"
+        android:shadowColor="#FF0000"
+        android:shadowDx="5"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text="titulo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="366dp"
+        android:layout_height="363dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_selector_preguntas">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_pregunta_1.1"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_1.2"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="2"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_1.3"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="3"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_1.4"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="4"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_pregunta_2.1"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:onClick="onClick"
+                android:backgroundTint="@color/white"
+                android:text="5"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_2.2"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="6"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_2.3"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="7"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_2.4"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:onClick="onClick"
+                android:backgroundTint="@color/white"
+                android:text="8"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_pregunta_3.1"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="9"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_3.2"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="10"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_3.3"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="11"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_3.4"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="12"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_pregunta_4.1"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="15dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="13"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_4.2"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="14"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_4.3"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="15"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_4.4"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:onClick="onClick"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="16"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_pregunta_5.1"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="6dp"
+                android:onClick="onClick"
+                android:backgroundTint="@color/white"
+                android:text="17"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_5.2"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:onClick="onClick"
+                android:backgroundTint="@color/white"
+                android:text="18"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_5.3"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onClick"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:text="19"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_pregunta_5.4"
+                android:layout_width="76dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/white"
+                android:onClick="onClick"
+                android:text="20"
+                android:textColor="@color/black" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GlosarioScreenCategoriaActivity"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/titulo_selccionado"
+        android:layout_width="347dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="80dp"
+        android:shadowColor="#FF0000"
+        android:shadowDx="5"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text="titulo del contenido seleccionado"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_text"
+        android:layout_width="360dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:text="contenido de la tarjeta bajdo de la base de datos"
+        android:textAlignment="inherit"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_selccionado" />
+
+    <Button
+        android:id="@+id/btn_back_selector_glosario"
+        android:layout_width="170dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FF0000"
+        android:text="@string/btn_back"
+        android:textColor="#F4F4F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".SelectorNivelActivity">
+
+    <Button
+        android:id="@+id/btn_probabilidad_selector"
+        android:layout_width="291dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/btn_probabilidad"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_algebra_selector" />
+
+    <Button
+        android:id="@+id/btn_algebra_selector"
+        android:layout_width="291dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/btn_algebra"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_numeros_selector" />
+
+    <Button
+        android:id="@+id/btn_geometria_selector"
+        android:layout_width="291dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:text="@string/btn_geometria_selector"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select" />
+
+    <Button
+        android:id="@+id/btn_numeros_selector"
+        android:layout_width="291dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/btn_numeros"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_geometria_selector" />
+
+    <Button
+        android:id="@+id/btn_random_selector"
+        android:layout_width="291dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onClick"
+        android:text="@string/btn_random"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_probabilidad_selector" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="325dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="40dp"
+        android:shadowColor="#FF0000"
+        android:shadowDx="5"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text='@string/title_selector'
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

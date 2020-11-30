@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainDespuesDeLoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_Start_after"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="237dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#F05F11"
+        android:elevation="@android:dimen/thumbnail_height"
+        android:text="@string/btn_start"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="@string/btn_start" />
+
+    <Button
+        android:id="@+id/btn_glosary_after"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="161dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1AD9D3"
+        android:text='@string/btn_glossary'
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Start_after" />
+
+    <TextView
+        android:id="@+id/text_puntaje"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/puntaje"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/icono"
+        app:layout_constraintTop_toBottomOf="@+id/text_nombre_usuario" />
+
+    <TextView
+        android:id="@+id/text_nombre_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/nombreUsuario"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/icono"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tienda"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#89F029"
+        android:drawableRight="@drawable/shop"
+        android:drawableTint="@color/white"
+        android:text="@string/tienda"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/icono"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#00C05F11"
+        android:drawableBottom="@drawable/gamasutra"
+        android:drawableTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

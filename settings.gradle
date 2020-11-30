@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Pitagora_app_2.0.1"

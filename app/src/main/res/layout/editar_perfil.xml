@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".EditarPerfilActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="401dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <EditText
+            android:id="@+id/text_editar_Nombre_usuario"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nombre de usuario"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/text_editar_Nombre"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/text_editar_apellido"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/text_editar_Numero"
+            android:layout_width="330dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Numero"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_cambiar_perfil"
+            android:layout_width="249dp"
+            android:layout_height="74dp"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="47dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#39CA11"
+            android:text="@string/btn_cambiar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

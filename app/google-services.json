@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1080312969091",
+    "firebase_url": "https://servidoralpha-ad5b9.firebaseio.com",
+    "project_id": "servidoralpha-ad5b9",
+    "storage_bucket": "servidoralpha-ad5b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080312969091:android:a7253c95229ad2060a28b6",
+        "android_client_info": {
+          "package_name": "com.software.pitagora_app_201"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080312969091-uubojlkl9ctdnlng2lg9siarkeud39eh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmEZk_8FKIk-pEUD6lUwQ97LSwuU3JIrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080312969091-uubojlkl9ctdnlng2lg9siarkeud39eh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
