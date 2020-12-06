@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pitagora_app_201">
-        <activity android:name=".NivelfinalizadoActivity"></activity>
+        <activity android:name=".PreguntarandomActivity"></activity>
+        <activity android:name=".NivelfinalizadoActivity" />
         <activity android:name=".EditarPerfilActivity" />
         <activity android:name=".CambioContraDesdePerfilActivity" />
         <activity android:name=".PerfilActivity" />

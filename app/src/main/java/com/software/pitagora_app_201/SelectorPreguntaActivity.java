@@ -145,24 +145,28 @@ public class SelectorPreguntaActivity extends AppCompatActivity {
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_1_2: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_1_3: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_1_4: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
 
 
@@ -171,24 +175,28 @@ public class SelectorPreguntaActivity extends AppCompatActivity {
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_2_2: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_2_3: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_2_4: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
 
 
@@ -197,24 +205,28 @@ public class SelectorPreguntaActivity extends AppCompatActivity {
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_3_2: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_3_3: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_3_4: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
 
 
@@ -223,24 +235,28 @@ public class SelectorPreguntaActivity extends AppCompatActivity {
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_4_2: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_4_3: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_4_4: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
 
 
@@ -249,24 +265,28 @@ public class SelectorPreguntaActivity extends AppCompatActivity {
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_5_2: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_5_3: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
             case R.id.btn_pregunta_5_4: {
                 Intent intent = new Intent(SelectorPreguntaActivity.this, PreguntaScreenActivity.class);
                 intent.putExtra("usuario",P);
                 intent.putExtra("cate",categoria);
                 startActivity(intent);
+                finish();
             }
         }
     }

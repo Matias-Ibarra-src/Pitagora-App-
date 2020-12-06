@@ -153,7 +153,7 @@ public class SelectorNivelActivity extends AppCompatActivity {
                 Persona usuario = (Persona) getIntent().getSerializableExtra("usuario");
 
                 if((usuario.getCorrectas_en_geo()+usuario.getCorrectas_en_alg()+usuario.getCorrectas_en_num()+usuario.getCorrectas_en_pro())>50){
-                    Intent intent = new Intent (v.getContext(), PreguntaScreenActivity.class);
+                    Intent intent = new Intent (v.getContext(), PreguntarandomActivity.class);
                     intent.putExtra("usuario", usuario);
                     startActivityForResult(intent, 0);
                 }else{

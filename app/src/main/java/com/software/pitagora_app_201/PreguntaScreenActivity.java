@@ -73,41 +73,37 @@ public class PreguntaScreenActivity extends AppCompatActivity {
 
             if(categoria1.equals("Geometria")){
                 if(usuarioLog.getCorrectas_en_geo() == 20){
-                    finish();
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
                     startActivityForResult(intent, 0);
-
+                    finish();
                 }
                 flag = true;
             }
             if(categoria1.equals("Numeros")){
                 if(usuarioLog.getCorrectas_en_num() == 20){
-                    finish();
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
                     startActivityForResult(intent, 0);
-
+                    finish();
                 }
                 flag = true;
             }
             if(categoria1.equals("Algebra")){
                 if(usuarioLog.getCorrectas_en_alg() == 20){
-                    finish();
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
                     startActivityForResult(intent, 0);
-
+                    finish();
                 }
                 flag = true;
             }
             if(categoria1.equals("Probabilidad")){
                 if(usuarioLog.getCorrectas_en_pro() == 20){
-                    finish();
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
                     startActivityForResult(intent, 0);
-
+                    finish();
                 }
                 flag = true;
             }
@@ -276,11 +272,11 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 actualizarPreguntas(usuarioLog);
-                                finish();
+
                                 Intent intent = new Intent(v.getContext(), MainDespuesDeLoginActivity.class);
                                 intent.putExtra("usuario", usuarioLog);
                                 startActivityForResult(intent, 0);
-
+                                finish();
                             }
                         });
 
@@ -288,12 +284,12 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 actualizarPreguntas(usuarioLog);
-                                finish();
+
                                 Intent intent = new Intent(v.getContext(), GlosarioInicioActivity.class);
                                 intent.putExtra("usuario", usuarioLog);
                                 intent.putExtra("id", categoria);
                                 startActivity(intent);
-
+                                finish();
                             }
                         });
 
@@ -301,12 +297,12 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 actualizarPreguntas(usuarioLog);
-                                finish();
+
                                 Intent intent = new Intent(v.getContext(), PreguntaScreenActivity.class);
                                 intent.putExtra("usuario", usuarioLog);
                                 intent.putExtra("cate", categoria);
                                 startActivity(intent);
-
+                                finish();
                             }
                         });
 
@@ -320,20 +316,26 @@ public class PreguntaScreenActivity extends AppCompatActivity {
             }
         }
 
-        public void actualizarPreguntas(Persona usuarioLog){
-            Persona p = new Persona();
-            p.setLocalid(usuarioLog.getLocalid());
-            p.setCorrectas_en_alg(usuarioLog.getCorrectas_en_alg());
-            p.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo());
-            p.setCorrectas_en_num(usuarioLog.getCorrectas_en_num());
-            p.setCorrectas_en_pro(usuarioLog.getCorrectas_en_pro());
-            p.setCorreo(usuarioLog.getCorreo());
-            p.setPuntajeTotal(usuarioLog.getPuntajeTotal());
-            p.setNombre_usuario(usuarioLog.getNombre_usuario());
-            p.setNombre(usuarioLog.getNombre());
-            p.setApellido(usuarioLog.getApellido());
-            p.setNumero(usuarioLog.getNumero());
-            p.setPassword(usuarioLog.getPassword());
-            databaseReference.child("Persona").child(p.getLocalid()).setValue(p);
-        }
+    @Override
+    public void onBackPressed() {
+        Log.d("MainActivity","onBackPressed()");
+        finish();
+    }
+
+    public void actualizarPreguntas(Persona usuarioLog){
+        Persona p = new Persona();
+        p.setLocalid(usuarioLog.getLocalid());
+        p.setCorrectas_en_alg(usuarioLog.getCorrectas_en_alg());
+        p.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo());
+        p.setCorrectas_en_num(usuarioLog.getCorrectas_en_num());
+        p.setCorrectas_en_pro(usuarioLog.getCorrectas_en_pro());
+        p.setCorreo(usuarioLog.getCorreo());
+        p.setPuntajeTotal(usuarioLog.getPuntajeTotal());
+        p.setNombre_usuario(usuarioLog.getNombre_usuario());
+        p.setNombre(usuarioLog.getNombre());
+        p.setApellido(usuarioLog.getApellido());
+        p.setNumero(usuarioLog.getNumero());
+        p.setPassword(usuarioLog.getPassword());
+        databaseReference.child("Persona").child(p.getLocalid()).setValue(p);
+    }
 }
