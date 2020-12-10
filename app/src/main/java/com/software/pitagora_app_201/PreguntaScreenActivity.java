@@ -35,6 +35,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
     String correcta;
 
     TextView texto;
+    TextView Correctas;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     public List<Pregunta> listPreguntas = new ArrayList<Pregunta>();
@@ -43,6 +44,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pregunta_screen);
         texto = (TextView) findViewById(R.id.textView2);
+        Correctas = (TextView) findViewById(R.id.text_Correctas_pregunta);
         recogerExtras();
         inicializarFirebase();
         llenarListaPreguntas();
@@ -72,6 +74,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
             Boolean flag = false;
 
             if(categoria1.equals("Geometria")){
+                Correctas.setText(String.format("%d",usuarioLog.getCorrectas_en_geo())+"/20");
                 if(usuarioLog.getCorrectas_en_geo() == 20){
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
@@ -81,6 +84,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                 flag = true;
             }
             if(categoria1.equals("Numeros")){
+                Correctas.setText(String.format("%d",usuarioLog.getCorrectas_en_num())+"/20");
                 if(usuarioLog.getCorrectas_en_num() == 20){
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
@@ -90,6 +94,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                 flag = true;
             }
             if(categoria1.equals("Algebra")){
+                Correctas.setText(String.format("%d",usuarioLog.getCorrectas_en_alg())+"/20");
                 if(usuarioLog.getCorrectas_en_alg() == 20){
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
@@ -99,6 +104,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                 flag = true;
             }
             if(categoria1.equals("Probabilidad")){
+                Correctas.setText(String.format("%d",usuarioLog.getCorrectas_en_pro())+"/20");
                 if(usuarioLog.getCorrectas_en_pro() == 20){
                     Intent intent = new Intent (PreguntaScreenActivity.this , NivelfinalizadoActivity.class);
                     intent.putExtra("usuario",usuarioLog);
@@ -150,6 +156,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                                     btn_4.setClickable(false);
                                     btn_1.setTextColor(Color.parseColor("#FFFFFF"));
                                     btn_1.setBackgroundColor(Color.parseColor("#1AFF00"));
+                                    usuarioLog.setPuntajeTotal(usuarioLog.getPuntajeTotal()+pregunta.getPuntaje());
                                     if (categoria1.equals("Geometria")) {
                                         usuarioLog.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo() + 1);
                                     } else if (categoria1.equals("Numeros")) {
@@ -182,7 +189,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                                     btn_4.setClickable(false);
                                     btn_2.setTextColor(Color.parseColor("#FFFFFF"));
                                     btn_2.setBackgroundColor(Color.parseColor("#1AFF00"));
-
+                                    usuarioLog.setPuntajeTotal(usuarioLog.getPuntajeTotal()+pregunta.getPuntaje());
                                     if (categoria1.equals("Geometria")) {
                                         usuarioLog.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo() + 1);
                                     } else if (categoria1.equals("Numeros")) {
@@ -214,7 +221,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                                     btn_4.setClickable(false);
                                     btn_3.setTextColor(Color.parseColor("#FFFFFF"));
                                     btn_3.setBackgroundColor(Color.parseColor("#1AFF00"));
-
+                                    usuarioLog.setPuntajeTotal(usuarioLog.getPuntajeTotal()+pregunta.getPuntaje());
                                     if (categoria1.equals("Geometria")) {
                                         usuarioLog.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo() + 1);
                                     } else if (categoria1.equals("Numeros")) {
@@ -247,6 +254,7 @@ public class PreguntaScreenActivity extends AppCompatActivity {
                                     btn_4.setClickable(false);
                                     btn_4.setTextColor(Color.parseColor("#FFFFFF"));
                                     btn_4.setBackgroundColor(Color.parseColor("#1AFF00"));
+                                    usuarioLog.setPuntajeTotal(usuarioLog.getPuntajeTotal()+pregunta.getPuntaje());
                                     if (categoria1.equals("Geometria")) {
                                         usuarioLog.setCorrectas_en_geo(usuarioLog.getCorrectas_en_geo() + 1);
                                     } else if (categoria1.equals("Numeros")) {
@@ -318,8 +326,6 @@ public class PreguntaScreenActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Log.d("MainActivity","onBackPressed()");
-        finish();
     }
 
     public void actualizarPreguntas(Persona usuarioLog){

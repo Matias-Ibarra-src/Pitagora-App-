@@ -56,7 +56,7 @@
 
         <TextView
             android:id="@+id/Text_nombre_Perfil"
-            android:layout_width="245dp"
+            android:layout_width="311dp"
             android:layout_height="38dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
@@ -68,7 +68,7 @@
 
         <TextView
             android:id="@+id/Text_apellido_Perfil"
-            android:layout_width="245dp"
+            android:layout_width="311dp"
             android:layout_height="38dp"
             android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
@@ -80,10 +80,10 @@
 
         <TextView
             android:id="@+id/Text_numero_perfil"
-            android:layout_width="245dp"
+            android:layout_width="259dp"
             android:layout_height="38dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
             android:text="Numero"
             android:textAlignment="textStart"
@@ -92,22 +92,22 @@
 
         <TextView
             android:id="@+id/Text_Correo_Perfil"
-            android:layout_width="245dp"
+            android:layout_width="258dp"
             android:layout_height="38dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
             android:text="Correo"
             android:textAlignment="textStart"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/Text_Puntaje_Perfil"
-            android:layout_width="245dp"
+            android:layout_width="313dp"
             android:layout_height="38dp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/white"
             android:text="Puntaje"
             android:textAlignment="textStart"

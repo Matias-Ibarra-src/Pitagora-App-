@@ -34,7 +34,7 @@ public class SubcategoriasScreenGlosarioActivity extends AppCompatActivity {
     ArrayAdapter<Glossary> arrayAdapterGlossary;
 
     ListView listV_glossary;
-    String x,y;
+    String x,y,z;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -74,6 +74,7 @@ public class SubcategoriasScreenGlosarioActivity extends AppCompatActivity {
                 glossarySelected.putExtra("usuario", usuarioLog);
                 glossarySelected.putExtra("dato1",x);
                 glossarySelected.putExtra("dato2",y);
+
                 startActivity(glossarySelected);
             }
         });

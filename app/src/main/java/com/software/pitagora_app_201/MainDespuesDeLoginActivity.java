@@ -67,4 +67,7 @@ TextView puntaje;
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+    }
 }

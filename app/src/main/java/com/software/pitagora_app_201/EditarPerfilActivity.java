@@ -101,7 +101,6 @@ public class EditarPerfilActivity extends AppCompatActivity {
                                 for (String rcs : listNumeros) {
                                     if (rcs.equals(Usuario.getNumero()) && src.equals(Usuario.getCorreo())) {
                                         Persona p = new Persona();
-                                        Log.d("tagw", "si entra");
 
                                         p.setLocalid(Usuario.getLocalid());
                                         p.setCorrectas_en_alg(Usuario.getCorrectas_en_alg());

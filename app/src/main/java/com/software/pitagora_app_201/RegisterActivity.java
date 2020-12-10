@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public List<String> listCorreos = new ArrayList<String>();
     public List<String> listNumeros = new ArrayList<String>();
-    EditText nomP, appP, correoP, passwordP, numP, nombre_usuario;
+    EditText nomP, appP, correoP, passwordP, numP, nombre_usuario, passwordC;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
         nombre_usuario = findViewById(R.id.text_Nombre_de_usuario);
         correoP = findViewById(R.id.text_correo_registro);
         passwordP = findViewById(R.id.text_contraseña_registro);
-
+        passwordC = findViewById(R.id.text_Confirmar_contraseña_registro);
         inicializarFirebase();
 
 
@@ -62,44 +62,49 @@ public class RegisterActivity extends AppCompatActivity {
         numP.setText("");
         nombre_usuario.setText("");
         appP.setText("");
+        passwordC.setText("");
     }
 
     private void validacion() {
         String nombre = nomP.getText().toString();
         String correo = correoP.getText().toString();
         String password = passwordP.getText().toString();
+        String passwordConf = passwordC.getText().toString();
         String app = appP.getText().toString();
         String numero = numP.getText().toString();
         String usuario = nombre_usuario.getText().toString();
 
         if (nombre.equals("")) {
-            nomP.setError("Required");
+            nomP.setError("Escribe un Nombre");
         } else if (app.equals("")) {
-            appP.setError("Required");
+            appP.setError("Escribe un Apellido");
         } else if (correo.equals("")) {
-            correoP.setError("Required");
+            correoP.setError("Escribe un Correo");
         } else if (password.equals("")) {
-            passwordP.setError("Required");
+            passwordP.setError("Escribe tu contraseña");
         } else if (numero.equals("")) {
-            numP.setError("Required");
+            numP.setError("Escribe tu Numero");
         } else if(usuario.equals("")){
-            nombre_usuario.setError("Required");
+            nombre_usuario.setError("Escribe un nick name");
+        } else if(passwordConf.equals("")){
+            passwordC.setError("Escribe tu contraseña");
         }
     }
 
     public void onClick(View v) {
-        //aca meti man
         String nombre = nomP.getText().toString();
         String correo = correoP.getText().toString();
         String password = passwordP.getText().toString();
+        String passwordConf = passwordC.getText().toString();
         String numero = numP.getText().toString();
         String app = appP.getText().toString();
         String Nombre_usuario = nombre_usuario.getText().toString();
+
         switch (v.getId()) {
 
             case R.id.btn_register: {
 
-                if (nombre.equals("") || correo.equals("") || password.equals("") || Nombre_usuario.equals("") || numero.equals("") || app.equals("")) {
+                if (nombre.equals("") || correo.equals("") || password.equals("") || Nombre_usuario.equals("") || numero.equals("") || app.equals("") || passwordConf.equals("")) {
                     validacion();
                 } else {
 
@@ -111,6 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
                             String password1 = passwordP.getText().toString();
                             String numero1 = numP.getText().toString();
                             String app1 = appP.getText().toString();
+                            boolean flag=true;
                             listCorreos.clear();
                             listNumeros.clear();
                             for (DataSnapshot objSnaptshot : dataSnapshot.getChildren()) {
@@ -135,10 +141,26 @@ public class RegisterActivity extends AppCompatActivity {
                                 if (numP.getText().toString().equals("") || correoP.getText().toString().equals("")) {
                                     //comprueba que los datos aun existan en las cajas
                                 } else {
+
+                                    /*if(!validarNumero(numP.getText().toString())){
+                                        numP.setError("Numero no válido");
+                                        flag=false;
+                                    }*/
+
                                     if (!validarEmail(correo1)){
                                         correoP.setError("Email no válido");
+                                        flag=false;
                                     }
-                                    else {
+                                    if (!password1.equals(passwordConf)) {
+                                        passwordC.setError("Contraseñas no son iguales");
+                                        flag=false;
+                                    }
+                                    if(password1.length()<12){
+                                        passwordP.setError("Contrasela muy corta");
+                                        flag=false;
+                                    }
+
+                                    if(flag){
                                         Persona p = new Persona();
                                         List<String> listPreguntas = new ArrayList<String>();
                                         String nombr = nomP.getText().toString();
@@ -189,6 +211,17 @@ public class RegisterActivity extends AppCompatActivity {
         Pattern pattern = Patterns.EMAIL_ADDRESS;
         return pattern.matcher(email).matches();
     }
+
+    /*private boolean validarNumero(String Numero){
+        if(Numero.indexOf("9") == 1){
+            Log.d("numero", "igual 9");
+            if(Numero.length() == 9){
+                Log.d("cantidad", "si tiene 9");
+                return true;
+            }
+        }
+        return false;
+    }*/
 
     private void agregar() {
         Toast.makeText(this, "Agregado", Toast.LENGTH_LONG).show();

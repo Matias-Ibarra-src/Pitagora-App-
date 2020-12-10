@@ -3,6 +3,7 @@ package com.software.pitagora_app_201;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,11 +31,13 @@ public class PerfilActivity extends AppCompatActivity {
         Persona P = (Persona) getIntent().getSerializableExtra("usuario");
 
         Nombre_usuario.setText(P.getNombre_usuario());
-        Nombre.setText(P.getNombre());
-        Apellido.setText(P.getApellido());
-        Numero.setText(P.getNumero());
-        Correo.setText(P.getCorreo());
-        Puntaje.setText(String.format("%d",P.getPuntajeTotal()));
+        Nombre.setText("Nombre: "+P.getNombre());
+        Apellido.setText("Apellido: "+P.getApellido());
+        Numero.setText(" "+P.getNumero());
+        Numero.setCompoundDrawablesWithIntrinsicBounds(R.drawable.phone, 0, 0, 0);
+        Correo.setText(" "+P.getCorreo());
+        Correo.setCompoundDrawablesWithIntrinsicBounds(R.drawable.mail, 0, 0, 0);
+        Puntaje.setText(String.format("Puntos: %d",P.getPuntajeTotal()));
 
         btn_editar.setOnClickListener(new View.OnClickListener() {
             @Override

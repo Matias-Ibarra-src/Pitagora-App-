@@ -112,4 +112,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/text_Correctas_pregunta"
+        android:layout_width="108dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="28dp"
+        android:text="Puntaje"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pregunta_glosario" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

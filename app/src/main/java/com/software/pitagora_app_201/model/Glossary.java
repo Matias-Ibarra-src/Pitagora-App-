@@ -13,7 +13,6 @@ public class Glossary {
         Contenido = contenido;
     }
 
-
     public String getCategoria() {
         return Categoria;
     }
@@ -24,4 +23,6 @@ public class Glossary {
     public String toString() {
         return Categoria;
     }
+
+
 }
